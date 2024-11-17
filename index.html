@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monita... 💛</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset básico */
+    body {
+        margin: 0;
+        padding: 20px; /* Espacio alrededor del contenido */
+        box-sizing: border-box;
+        font-family: 'Dancing Script', cursive; /* Fuente cursiva bonita */
+        background-color: rgba(255, 249, 230, 0.808); /* Fondo con efecto vidrio */
+        backdrop-filter: blur(5px); /* Efecto de desenfoque */
+        min-height: 100vh; /* Permite crecer según el contenido */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Centra el contenido verticalmente */
+    }
+
+    /* Collage de imágenes */
+    .collage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none; /* Evita interferencias con el texto */
+    }
+
+    .collage-img {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        border: 3px solid #ffffff; /* Marco blanco */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        transform: rotate(calc(var(--angle, 0) * 1deg));
+    }
+
+    /* Posiciones aleatorias de las imágenes */
+    .collage-img:nth-child(1) {
+        top: 10%;
+        left: 5%;
+        --angle: -10;
+    }
+
+    .collage-img:nth-child(2) {
+        top: 20%;
+        right: 5%;
+        --angle: 15;
+    }
+
+    .collage-img:nth-child(3) {
+        bottom: 10%;
+        left: 15%;
+        --angle: 20;
+    }
+
+    .collage-img:nth-child(4) {
+        bottom: 15%;
+        right: 10%;
+        --angle: -15;
+    }
+
+    .collage-img:nth-child(5) {
+        top: 5%;
+        right: 20%;
+        --angle: -5;
+    }
+
+    .collage-img:nth-child(6) {
+        bottom: 5%;
+        left: 10%;
+        --angle: 10;
+    }
+
+    /* Tarjeta central */
+    .card {
+        position: relative;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+        z-index: 1;
+        max-width: 600px;
+        margin: 20px auto; /* Separa la tarjeta del borde */
+        overflow-y: auto; /* Permite el desplazamiento si el contenido es largo */
+    }
+
+    /* Título */
+    .title {
+        font-size: 2.5rem;
+        color: #f1a40e; /* Amarillo cálido */
+        margin-bottom: 20px;
+        font-style: italic; /* Asegura que sea cursiva */
+    }
+
+    /* Texto */
+    .text-content {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #333;
+        background: #fdf2e1;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: justify; /* Justifica el texto */
+        max-height: 80vh; /* Limita la altura para que no ocupe toda la pantalla */
+        overflow-y: auto; /* Permite el desplazamiento si el texto es largo */
+    }
+
+    /* Fuente cursiva */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+  </style>
+</head>
+<body>
+  <div class="collage">
+    <!-- Reemplaza las rutas de las imágenes por las tuyas -->
+    <img src="IMG-20241115-WA0014.jpg" alt="Imagen 1" class="collage-img">
+    <img src="IMG-20241115-WA0015.jpg" alt="Imagen 2" class="collage-img">
+    <img src="IMG-20241115-WA0016.jpg" alt="Imagen 3" class="collage-img">
+    <img src="IMG-20241115-WA0017.jpg" alt="Imagen 4" class="collage-img">
+    <img src="IMG-20241115-WA0018.jpg" alt="Imagen 5" class="collage-img">
+    <img src="IMG-20241115-WA0019.jpg" alt="Imagen 6" class="collage-img">
+    <img src="IMG-20241115-WA0020.jpg" alt="Imagen 7" class="collage-img">
+    <img src="IMG-20241115-WA0021.jpg" alt="Imagen 8" class="collage-img">
+    <img src="IMG-20241115-WA0022.jpg" alt="Imagen 9" class="collage-img">
+    <img src="IMG-20241115-WA0023.jpg" alt="Imagen 10" class="collage-img">
+    <img src="IMG-20241115-WA0024.jpg" alt="Imagen 11" class="collage-img">
+  </div>
+
+  <div class="card">
+    <h1 class="title">Mi Monita 💛</h1>
+    <p class="text-content">
+        A pesar de todo lo que ha pasado, te sigo amando. Sé que tú también. No fui el mejor en cuanto a saber cómo tratarte, ni en mis acciones. Quise hacer todo bien, pero no cumplí esa promesa. Tienes toda la razón al no querer volver conmigo, pero quiero que no quedemos en que nos separamos por las peleas, ni mucho menos que digan que ya no estamos juntos.
+
+        Quiero que nos vean y digan: "lo superaron juntos". Tú y yo estamos hechos el uno para el otro. Últimamente he estado demasiado mal. No sé cómo hacer para que volvamos a estar como antes: cuando me llamabas, cuando me escribías por cualquier cosa, cuando demostrábamos estar enamorados. Quiero tener una oportunidad de poder demostrarte que quiero hacer todo mejor, empezar desde cero. No sé cómo hacerlo. Hasta te hice esta carta por internet, jaja.
+        
+        No sé tampoco cómo hacer para que confíes en mí de nuevo. Sé que te fallé. Si, por cosas de la vida, no volvemos a estar juntos. También quiero que mantengas presente que te amo, que por ti dejaría y daría todo para que estés feliz. Te quiero pedir perdón desde el fondo de mi corazón, porque no estuve contigo cuando estabas mal, y sé que lo había prometido.
+        
+        Tuve muchos errores, y cómo quisiera cambiarlos. tal vez sea dificl. Pero quiero volver a encender esa chispa. Recuerdo el día que hicimos la despedida y te prometí que te iba a esperar hasta que llegaras, que por siempre te iba a amar. Me da miedo que pase el tiempo y dejes de amarme. Sé que no va a pasar, porque le pido a Dios que podamos salir de esto juntos.
+        
+        No quería que cuando llegaras a Medellín estuviéramos separados. Quería recibirte con un fuerte abrazo y, ese mismo día que te viera de nuevo, pedirte que fueras mi novia. Créeme que, cuando te digo que no me veo con alguien que no seas tú, lo digo muy, muy en serio. No me digas que es tarde, porque sé que tú también quieres. Sé que nuestro amor puede superar cualquier cosa. Créeme, no te voy a fallar.
+        
+        Quiero que sepas que quiero estar contigo, porque te amo y te quiero. 
+
+         quiero agradecerte por todo lo que has hecho en mí, por todos los momentos lindos que me diste, por hacerme sentir cosas que antes no, 
+
+         te acuerdas las noches que nos quedabamos despiertos hasta tarde?, pensaba que podria escuharte toda una vida sin aburrirme, nunca senti eso por nadie y ahi cai en cuenta que 
+         fue cuando me enamore
+         prometeme que aunque esto no nos ayuede a volver, vas a cuidar de fede
+        Siempre serás mi niña de ojos lindos.                    
+         ATT: tu monito💛
+    </p>
+
+    <!-- Video al final del mensaje -->
+    <div class="video-container">
+      <video controls width="100%">
+        <source src="Video de WhatsApp 2024-11-15 a las 20.55.16_b9beea9b.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
